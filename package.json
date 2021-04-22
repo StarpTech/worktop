@@ -4,7 +4,8 @@
   "repository": "lukeed/worktop",
   "description": "The next generation web framework for Cloudflare Workers",
   "types": "router/index.d.ts",
-  "main": "router/index.mjs",
+  "module": "router/index.mjs",
+  "main": "router/index.js",
   "license": "MIT",
   "author": {
     "name": "Luke Edwards",
