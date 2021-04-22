@@ -14,11 +14,11 @@ const options = {
  * @param {string} output
  * @param {string[]} [externals]
  */
-exports.build = function (input, output, externals=[]) {
+exports.build = function (input, output, format, externals=[]) {
 	return esbuild.build({
 		...options,
 		bundle: true,
-		format: 'esm',
+		format,
 		outfile: output,
 		entryPoints: [input],
 		external: externals,
